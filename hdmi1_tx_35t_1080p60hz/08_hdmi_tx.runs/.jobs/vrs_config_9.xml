@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_wiz_0_synth_1" LaunchDir="G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/08_hdmi_tx.runs/clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="HDMI_FPGA_ML_A7_0_synth_1" LaunchDir="G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/08_hdmi_tx.runs/HDMI_FPGA_ML_A7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_3" LaunchDir="G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/08_hdmi_tx.runs/synth_3" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="clk_wiz_0_synth_1"/>
+		<Parent Id="HDMI_FPGA_ML_A7_0_synth_1"/>
+	</Run>
+</Runs>
+

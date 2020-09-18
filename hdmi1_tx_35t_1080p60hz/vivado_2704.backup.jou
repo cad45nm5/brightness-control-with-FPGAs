@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Jul 02 23:54:17 2018
+# Process ID: 2704
+# Current directory: K:/hdmi_tx_75t
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent760 K:\hdmi_tx_75t\08_hdmi_tx.xpr
+# Log file: K:/hdmi_tx_75t/vivado.log
+# Journal file: K:/hdmi_tx_75t\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project K:/hdmi_tx_75t/08_hdmi_tx.xpr
+open_hw
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/00000000000000]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/00000000000000]
+open_hw_target
+set_property PROGRAM.FILE {E:\bin\2sdi\sdi_proc.bit} [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:\bin\2sdi\debug_nets.ltx} [lindex [get_hw_devices xc7a75t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/bin/2sdi/debug_nets.ltx} [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROGRAM.FILE {K:/hdmi_tx_75t/08_hdmi_tx.runs/impl_2/HDMI_tx_test.bit} [lindex [get_hw_devices xc7a75t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a75t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]

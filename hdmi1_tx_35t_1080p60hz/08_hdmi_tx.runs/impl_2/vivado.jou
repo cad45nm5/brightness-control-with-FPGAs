@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Jan 26 16:57:03 2019
+# Process ID: 4196
+# Current directory: G:/deverlopboard/a7_code/hdmi_tx_75t_1080p60hz/08_hdmi_tx.runs/impl_2
+# Command line: vivado.exe -log HDMI_tx_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source HDMI_tx_test.tcl -notrace
+# Log file: G:/deverlopboard/a7_code/hdmi_tx_75t_1080p60hz/08_hdmi_tx.runs/impl_2/HDMI_tx_test.vdi
+# Journal file: G:/deverlopboard/a7_code/hdmi_tx_75t_1080p60hz/08_hdmi_tx.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source HDMI_tx_test.tcl -notrace

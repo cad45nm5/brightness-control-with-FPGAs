@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun Aug 05 19:20:07 2018
+# Process ID: 5644
+# Current directory: K:/hdmi_tx_75t/08_hdmi_tx.runs/synth_2
+# Command line: vivado.exe -log HDMI_tx_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_tx_test.tcl
+# Log file: K:/hdmi_tx_75t/08_hdmi_tx.runs/synth_2/HDMI_tx_test.vds
+# Journal file: K:/hdmi_tx_75t/08_hdmi_tx.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source HDMI_tx_test.tcl -notrace

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun 12 10:38:56 2019
+# Process ID: 3492
+# Current directory: G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/08_hdmi_tx.runs/synth_3
+# Command line: vivado.exe -log HDMI_tx_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_tx_test.tcl
+# Log file: G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/08_hdmi_tx.runs/synth_3/HDMI_tx_test.vds
+# Journal file: G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/08_hdmi_tx.runs/synth_3\vivado.jou
+#-----------------------------------------------------------
+source HDMI_tx_test.tcl -notrace

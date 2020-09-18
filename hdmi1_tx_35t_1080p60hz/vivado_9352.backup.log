@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Aug 14 19:42:32 2018
+# Process ID: 9352
+# Current directory: M:/deverlopboard/a7_code/hdmi_tx_75t_1080p60hz
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9980 M:\deverlopboard\a7_code\hdmi_tx_75t_1080p60hz\08_hdmi_tx.xpr
+# Log file: M:/deverlopboard/a7_code/hdmi_tx_75t_1080p60hz/vivado.log
+# Journal file: M:/deverlopboard/a7_code/hdmi_tx_75t_1080p60hz\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project M:/deverlopboard/a7_code/hdmi_tx_75t_1080p60hz/08_hdmi_tx.xpr
+INFO: [Project 1-313] Project file moved from 'K:/hdmi_tx_75t' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'M:/deverlopboard/a7_code/miz_ip_lib/HDMI_FPGA_ML_A7', nor could it be found using path 'K:/miz_ip_lib/HDMI_FPGA_ML_A7'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'm:/deverlopboard/a7_code/miz_ip_lib/HDMI_FPGA_ML_A7'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'HDMI_FPGA_ML_A7_0' is locked:
+* IP definition 'HDMI_FPGA_ML_A7 (1.0)' for IP 'HDMI_FPGA_ML_A7_0' (customized with software release 2016.4) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 14 20:45:18 2018...

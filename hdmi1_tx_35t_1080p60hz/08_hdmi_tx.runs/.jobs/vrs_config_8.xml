@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="impl_2" LaunchDir="G:/deverlopboard/a7_code/hdmi_tx_75t_1080p60hz/08_hdmi_tx.runs/impl_2" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream"/>
+</Runs>
+

@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun 11 15:39:21 2019
+# Process ID: 5108
+# Current directory: G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7244 G:\deverlopboard\a35t_code\hdmi1_tx_35t_1080p60hz\08_hdmi_tx.xpr
+# Log file: G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/vivado.log
+# Journal file: G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/08_hdmi_tx.xpr
+reset_run synth_3
+reset_run HDMI_FPGA_ML_A7_0_synth_1
+launch_runs impl_3 -to_step write_bitstream -jobs 2
+wait_on_run impl_3
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/08_hdmi_tx.runs/impl_3/HDMI_tx_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/08_hdmi_tx.runs/impl_3/HDMI_tx_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/08_hdmi_tx.runs/impl_3/HDMI_tx_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {G:/deverlopboard/a35t_code/hdmi1_tx_35t_1080p60hz/08_hdmi_tx.runs/impl_3/HDMI_tx_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

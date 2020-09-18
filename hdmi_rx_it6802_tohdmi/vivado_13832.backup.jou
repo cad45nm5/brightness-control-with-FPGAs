@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Oct 18 23:42:00 2019
+# Process ID: 13832
+# Current directory: G:/deverlopboard/a35t_code/hdmi_rx_it6802_tohdmi
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16100 G:\deverlopboard\a35t_code\hdmi_rx_it6802_tohdmi\hdmi_rx_it6802.xpr
+# Log file: G:/deverlopboard/a35t_code/hdmi_rx_it6802_tohdmi/vivado.log
+# Journal file: G:/deverlopboard/a35t_code/hdmi_rx_it6802_tohdmi\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/deverlopboard/a35t_code/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.xpr
+update_compile_order -fileset sources_1
+open_run impl_2
