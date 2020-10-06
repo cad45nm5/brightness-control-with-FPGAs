@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Jan 11 12:10:32 2020
+# Process ID: 10692
+# Current directory: G:/deverlopboard/a35t_code/uart_test/uart_test.runs/synth_2
+# Command line: vivado.exe -log uart_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_test.tcl
+# Log file: G:/deverlopboard/a35t_code/uart_test/uart_test.runs/synth_2/uart_test.vds
+# Journal file: G:/deverlopboard/a35t_code/uart_test/uart_test.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source uart_test.tcl -notrace

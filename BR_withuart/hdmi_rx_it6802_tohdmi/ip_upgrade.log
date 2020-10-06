@@ -1,0 +1,121 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Sep  9 17:37:25 2020
+| Host         : DESKTOP-DCEMUHV running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_0 (xilinx.com:ip:ila:6.2) from (Rev. 5) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Sep  9 17:37:13 2020
+| Host         : DESKTOP-DCEMUHV running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vio_0 (xilinx.com:ip:vio:3.0) from (Rev. 17) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Sep  9 17:37:00 2020
+| Host         : DESKTOP-DCEMUHV running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sys_pll'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of sys_pll from xilinx.com:ip:clk_wiz:5.4 (Rev. 3) to xilinx.com:ip:clk_wiz:6.0 (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Aug 20 16:34:51 2019
+| Host         : DADI-20180128YX running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vio_0 (xilinx.com:ip:vio:3.0 (Rev. 17)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Aug 20 16:34:49 2019
+| Host         : DADI-20180128YX running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sys_pll'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of sys_pll (xilinx.com:ip:clk_wiz:5.4 (Rev. 3)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Aug 20 16:34:45 2019
+| Host         : DADI-20180128YX running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a35tftg256-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_0 (xilinx.com:ip:ila:6.2 (Rev. 5)) to Vivado generation flows.
+

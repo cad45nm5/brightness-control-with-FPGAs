@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Wed Sep 16 17:00:57 2020
+| Date             : Tue Oct  6 15:23:59 2020
 | Host             : DESKTOP-DCEMUHV running 64-bit major release  (build 9200)
 | Command          : report_power -file hdmi_rx_power_routed.rpt -pb hdmi_rx_power_summary_routed.pb -rpx hdmi_rx_power_routed.rpx
 | Design           : hdmi_rx
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.385        |
+| Total On-Chip Power (W)  | 0.389        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.312        |
+| Dynamic (W)              | 0.317        |
 | Device Static (W)        | 0.073        |
 | Effective TJA (C/W)      | 4.9          |
 | Max Ambient (C)          | 83.1         |
@@ -53,21 +53,21 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.013 |        8 |       --- |             --- |
-| Slice Logic              |     0.016 |     5029 |       --- |             --- |
-|   LUT as Logic           |     0.013 |     1547 |     20800 |            7.44 |
-|   Register               |     0.001 |     2614 |     41600 |            6.28 |
-|   CARRY4                 |    <0.001 |       87 |      8150 |            1.07 |
+| Slice Logic              |     0.018 |     5255 |       --- |             --- |
+|   LUT as Logic           |     0.016 |     1678 |     20800 |            8.07 |
+|   Register               |     0.001 |     2646 |     41600 |            6.36 |
+|   CARRY4                 |    <0.001 |      114 |      8150 |            1.40 |
 |   LUT as Shift Register  |    <0.001 |       88 |      9600 |            0.92 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   F7/F8 Muxes            |    <0.001 |        3 |     32600 |           <0.01 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      9600 |            0.25 |
 |   Others                 |     0.000 |      264 |       --- |             --- |
-| Signals                  |     0.016 |     3857 |       --- |             --- |
+| Signals                  |     0.018 |     3942 |       --- |             --- |
 | Block RAM                |     0.003 |        7 |        50 |           14.00 |
 | MMCM                     |     0.096 |        1 |         5 |           20.00 |
 | I/O                      |     0.169 |       43 |       170 |           25.29 |
 | Static Power             |     0.073 |          |           |                 |
-| Total                    |     0.385 |          |           |                 |
+| Total                    |     0.389 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.064 |       0.054 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.069 |       0.058 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.068 |       0.055 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.049 |       0.048 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -151,7 +151,7 @@ Table of Contents
 +---------------------------+-----------+
 | Name                      | Power (W) |
 +---------------------------+-----------+
-| hdmi_rx                   |     0.312 |
+| hdmi_rx                   |     0.317 |
 |   dbg_hub                 |     0.005 |
 |     inst                  |     0.005 |
 |       BSCANID.u_xsdbm_id  |     0.005 |

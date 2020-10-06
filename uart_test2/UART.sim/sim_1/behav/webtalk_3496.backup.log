@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jul 25 13:53:58 2017
+# Process ID: 3496
+# Current directory: F:/A7_Demo/S01_CH08_UART/UART/UART.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source F:/A7_Demo/S01_CH08_UART/UART/UART.sim/sim_1/behav/xsim.dir/uart_top_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/A7_Demo/S01_CH08_UART/UART/UART.sim/sim_1/behav/webtalk.log
+# Journal file: F:/A7_Demo/S01_CH08_UART/UART/UART.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source F:/A7_Demo/S01_CH08_UART/UART/UART.sim/sim_1/behav/xsim.dir/uart_top_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/A7_Demo/S01_CH08_UART/UART/UART.sim/sim_1/behav/xsim.dir/uart_top_TB_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Jul 25 13:54:04 2017. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 49.023 ; gain = 0.055
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 25 13:54:04 2017...

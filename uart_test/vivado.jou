@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Sep  4 19:14:26 2017
+# Process ID: 14252
+# Current directory: D:/demo_AX7103/6_uart_test/uart_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13396 D:\demo_AX7103\6_uart_test\uart_test\uart_test.xpr
+# Log file: D:/demo_AX7103/6_uart_test/uart_test/vivado.log
+# Journal file: D:/demo_AX7103/6_uart_test/uart_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/demo_AX7103/6_uart_test/uart_test/uart_test.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+update_ip_catalog
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target

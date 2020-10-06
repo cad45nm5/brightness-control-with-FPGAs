@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:G:/deverlopboard/a35t_code/uart_test/constrs_1/new/uart.xdc rfile:../../../constrs_1/new/uart.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N11 [get_ports clk_i]
+set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R2 [get_ports uart_rx]
+set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R3 [get_ports uart_tx]

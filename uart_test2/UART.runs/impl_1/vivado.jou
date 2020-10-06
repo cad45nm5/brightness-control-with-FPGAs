@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jul 25 13:55:19 2017
+# Process ID: 10596
+# Current directory: F:/A7_Demo/S01_CH08_UART/UART/UART.runs/impl_1
+# Command line: vivado.exe -log uart_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_top.tcl -notrace
+# Log file: F:/A7_Demo/S01_CH08_UART/UART/UART.runs/impl_1/uart_top.vdi
+# Journal file: F:/A7_Demo/S01_CH08_UART/UART/UART.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source uart_top.tcl -notrace

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Aug  6 15:11:43 2019
+# Process ID: 10544
+# Current directory: E:/kehu/tianjingdaxue/UART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5996 E:\kehu\tianjingdaxue\UART\UART.xpr
+# Log file: E:/kehu/tianjingdaxue/UART/vivado.log
+# Journal file: E:/kehu/tianjingdaxue/UART\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/kehu/tianjingdaxue/UART/UART.xpr
+update_compile_order -fileset sources_1

@@ -25,6 +25,15 @@ set_property IOSTANDARD LVCMOS33 [get_ports {r_in[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {r_in[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports KEY]
 
+set_property IOSTANDARD LVCMOS33 [get_ports dip[0]]
+set_property IOSTANDARD LVCMOS33 [get_ports dip[1]]
+set_property IOSTANDARD LVCMOS33 [get_ports dip[2]]
+set_property IOSTANDARD LVCMOS33 [get_ports dip[3]]
+set_property IOSTANDARD LVCMOS33 [get_ports dip[4]]
+set_property IOSTANDARD LVCMOS33 [get_ports dip[5]]
+set_property IOSTANDARD LVCMOS33 [get_ports dip[6]]
+set_property IOSTANDARD LVCMOS33 [get_ports dip[7]]
+
 set_property PACKAGE_PIN L13 [get_ports i2c_clk]
 
 
@@ -77,6 +86,15 @@ set_property PACKAGE_PIN J3 [get_ports i2s_sck]
 set_property PACKAGE_PIN J1 [get_ports i2s_sdin]
 set_property PACKAGE_PIN K1 [get_ports i2s_ws]
 set_property PACKAGE_PIN K12 [get_ports KEY]
+
+set_property PACKAGE_PIN A7 [get_ports dip[0]]
+set_property PACKAGE_PIN B7 [get_ports dip[1]]
+set_property PACKAGE_PIN C7 [get_ports dip[2]]
+set_property PACKAGE_PIN C6 [get_ports dip[3]]
+set_property PACKAGE_PIN D5 [get_ports dip[4]]
+set_property PACKAGE_PIN D6 [get_ports dip[5]]
+set_property PACKAGE_PIN D4 [get_ports dip[6]]
+set_property PACKAGE_PIN C4 [get_ports dip[7]]
 
 set_property IOSTANDARD TMDS_33 [get_ports HDMI_CLK_P]
 set_property IOSTANDARD TMDS_33 [get_ports HDMI_CLK_N]

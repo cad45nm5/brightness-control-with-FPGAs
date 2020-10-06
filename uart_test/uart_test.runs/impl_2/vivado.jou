@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Jan 11 12:11:11 2020
+# Process ID: 9172
+# Current directory: G:/deverlopboard/a35t_code/uart_test/uart_test.runs/impl_2
+# Command line: vivado.exe -log uart_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_test.tcl -notrace
+# Log file: G:/deverlopboard/a35t_code/uart_test/uart_test.runs/impl_2/uart_test.vdi
+# Journal file: G:/deverlopboard/a35t_code/uart_test/uart_test.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source uart_test.tcl -notrace

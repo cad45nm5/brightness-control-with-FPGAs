@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Sep 18 15:50:35 2020
+# Process ID: 13280
+# Current directory: C:/Users/STEVEN/Desktop/GITHUB/FGPA/uart_test2/UART.runs/impl_3
+# Command line: vivado.exe -log uart_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_top.tcl -notrace
+# Log file: C:/Users/STEVEN/Desktop/GITHUB/FGPA/uart_test2/UART.runs/impl_3/uart_top.vdi
+# Journal file: C:/Users/STEVEN/Desktop/GITHUB/FGPA/uart_test2/UART.runs/impl_3\vivado.jou
+#-----------------------------------------------------------
+source uart_top.tcl -notrace

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Aug  6 11:35:35 2019
+# Process ID: 1236
+# Current directory: E:/BaiduYunDownload/mia701/new code/MIA701/free_code/S01/S01_CH10_UART/UART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8784 E:\BaiduYunDownload\mia701\new code\MIA701\free_code\S01\S01_CH10_UART\UART\UART.xpr
+# Log file: E:/BaiduYunDownload/mia701/new code/MIA701/free_code/S01/S01_CH10_UART/UART/vivado.log
+# Journal file: E:/BaiduYunDownload/mia701/new code/MIA701/free_code/S01/S01_CH10_UART/UART\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/BaiduYunDownload/mia701/new code/MIA701/free_code/S01/S01_CH10_UART/UART/UART.xpr}
+INFO: [Project 1-313] Project file moved from 'F:/A7_Demo/S01_CH08_UART/UART' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'UART.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug  6 11:36:46 2019...

@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Sep  4 19:14:26 2017
+# Process ID: 14252
+# Current directory: D:/demo_AX7103/6_uart_test/uart_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13396 D:\demo_AX7103\6_uart_test\uart_test\uart_test.xpr
+# Log file: D:/demo_AX7103/6_uart_test/uart_test/vivado.log
+# Journal file: D:/demo_AX7103/6_uart_test/uart_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/demo_AX7103/6_uart_test/uart_test/uart_test.xpr
+INFO: [Project 1-313] Project file moved from 'Y:/project/AX/AX7103/CD/02_demo/6_uart_test/uart_test' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/demo_AX7103/6_uart_test/uart_test/uart1_test.ip_user_files', nor could it be found using path 'Y:/project/AX/AX7103/CD/02_demo/6_uart_test/uart_test/uart1_test.ip_user_files'.
+INFO: [Project 1-230] Project 'uart_test.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Mon Sep  4 19:16:48 2017] Launched synth_1...
+Run output will be captured here: D:/demo_AX7103/6_uart_test/uart_test/uart_test.runs/synth_1/runme.log
+[Mon Sep  4 19:16:48 2017] Launched impl_1...
+Run output will be captured here: D:/demo_AX7103/6_uart_test/uart_test/uart_test.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Sep  4 19:28:11 2017] Launched impl_1...
+Run output will be captured here: D:/demo_AX7103/6_uart_test/uart_test/uart_test.runs/impl_1/runme.log
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+update_ip_catalog
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Sep  4 19:40:14 2017] Launched impl_1...
+Run output will be captured here: D:/demo_AX7103/6_uart_test/uart_test/uart_test.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  4 19:53:50 2017...

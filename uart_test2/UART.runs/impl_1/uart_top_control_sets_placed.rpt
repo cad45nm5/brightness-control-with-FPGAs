@@ -1,0 +1,83 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Jul 25 13:55:38 2017
+| Host         : LB-201704111542 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file uart_top_control_sets_placed.rpt
+| Design       : uart_top
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    81 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              26 |           11 |
+| Yes          | No                    | No                     |              21 |           11 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              12 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------+---------------------------------------------+----------------------------------------+------------------+----------------+
+|   Clock Signal   |                Enable Signal                |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++------------------+---------------------------------------------+----------------------------------------+------------------+----------------+
+|  clk_i_IBUF_BUFG | uart_tx_path_u/uart_tx_o_r_i_1_n_0          |                                        |                1 |              1 |
+|  clk_i_IBUF_BUFG | uart_rx_path_u/uart_rx_data_o_r0[1]_i_1_n_0 |                                        |                1 |              1 |
+|  clk_i_IBUF_BUFG | uart_rx_path_u/uart_rx_data_o_r0[4]_i_1_n_0 |                                        |                1 |              1 |
+|  clk_i_IBUF_BUFG | uart_rx_path_u/uart_rx_data_o_r0[5]_i_1_n_0 |                                        |                1 |              1 |
+|  clk_i_IBUF_BUFG | uart_rx_path_u/uart_rx_data_o_r0[0]_i_1_n_0 |                                        |                1 |              1 |
+|  clk_i_IBUF_BUFG | uart_rx_path_u/uart_rx_data_o_r0[2]_i_1_n_0 |                                        |                1 |              1 |
+|  clk_i_IBUF_BUFG | uart_rx_path_u/uart_rx_data_o_r0[3]_i_1_n_0 |                                        |                1 |              1 |
+|  clk_i_IBUF_BUFG | uart_rx_path_u/uart_rx_data_o_r0[6]_i_1_n_0 |                                        |                1 |              1 |
+|  clk_i_IBUF_BUFG | uart_rx_path_u/uart_rx_data_o_r0[7]_i_1_n_0 |                                        |                1 |              1 |
+|  clk_i_IBUF_BUFG | uart_tx_path_u/bit_num[3]_i_2_n_0           | uart_tx_path_u/bit_num[3]_i_1__0_n_0   |                2 |              4 |
+|  clk_i_IBUF_BUFG | uart_rx_path_u/bit_num[3]_i_1_n_0           |                                        |                1 |              4 |
+|  clk_i_IBUF_BUFG |                                             | uart_rx_path_u/baud_bps                |                3 |              6 |
+|  clk_i_IBUF_BUFG |                                             | uart_tx_path_u/baud_bps                |                2 |              6 |
+|  clk_i_IBUF_BUFG |                                             | uart_rx_path_u/baud_div[12]_i_1__0_n_0 |                3 |              7 |
+|  clk_i_IBUF_BUFG |                                             | uart_tx_path_u/baud_div[12]_i_1_n_0    |                3 |              7 |
+|  clk_i_IBUF_BUFG | uart_tx_path_u/send_data[8]_i_2_n_0         | uart_tx_path_u/send_data[8]_i_1_n_0    |                3 |              8 |
+|  clk_i_IBUF_BUFG | uart_rx_path_u/uart_rx_data_o_r1[7]_i_1_n_0 |                                        |                1 |              8 |
+|  clk_i_IBUF_BUFG |                                             |                                        |                6 |             12 |
++------------------+---------------------------------------------+----------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     9 |
+| 4      |                     2 |
+| 6      |                     2 |
+| 7      |                     2 |
+| 8      |                     2 |
+| 12     |                     1 |
++--------+-----------------------+
+
+

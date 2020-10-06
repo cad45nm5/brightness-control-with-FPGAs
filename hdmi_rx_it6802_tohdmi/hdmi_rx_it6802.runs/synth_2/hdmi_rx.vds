@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed Sep 16 16:57:46 2020
-# Process ID: 12792
+# Start of session at: Tue Oct  6 15:21:07 2020
+# Process ID: 6800
 # Current directory: C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2
 # Command line: vivado.exe -log hdmi_rx.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_rx.tcl
 # Log file: C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/hdmi_rx.vds
@@ -22,11 +22,28 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tftg256-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3412
+INFO: [Synth 8-7075] Helper process launched with PID 14344
+WARNING: [Synth 8-2292] literal value truncated to fit in 5 bits [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:422]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1073.750 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1080.281 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'hdmi_rx' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:23]
+	Parameter HL_o bound to: 20 - type: integer 
+	Parameter HR_o bound to: 1900 - type: integer 
+	Parameter VH_o bound to: 20 - type: integer 
+	Parameter VL_o bound to: 1060 - type: integer 
+	Parameter HL_c bound to: 0 - type: integer 
+	Parameter HR_c bound to: 1920 - type: integer 
+	Parameter VH_c bound to: 0 - type: integer 
+	Parameter VL_c bound to: 1080 - type: integer 
+	Parameter HLX_o bound to: 40 - type: integer 
+	Parameter HRX_o bound to: 1880 - type: integer 
+	Parameter VHX_o bound to: 40 - type: integer 
+	Parameter VLX_o bound to: 1040 - type: integer 
+	Parameter HLX_c bound to: 0 - type: integer 
+	Parameter HRX_c bound to: 1920 - type: integer 
+	Parameter VHX_c bound to: 0 - type: integer 
+	Parameter VLX_c bound to: 1080 - type: integer 
 	Parameter HBP bound to: 148 - type: integer 
 	Parameter HFP bound to: 88 - type: integer 
 	Parameter VBP bound to: 36 - type: integer 
@@ -35,8 +52,10 @@ INFO: [Synth 8-6157] synthesizing module 'hdmi_rx' [C:/Users/STEVEN/Desktop/GITH
 	Parameter active_y bound to: 1080 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:259]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:300]
+WARNING: [Synth 8-151] case item 5'b00110 is unreachable [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:154]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:154]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:545]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:586]
 INFO: [Synth 8-6157] synthesizing module 'iic_com' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/iic_com.v:21]
 	Parameter LUT_SIZE bound to: 3 - type: integer 
 	Parameter General_Control_0 bound to: 0 - type: integer 
@@ -59,33 +78,33 @@ INFO: [Synth 8-6157] synthesizing module 'iic_com' [C:/Users/STEVEN/Desktop/GITH
 	Parameter STOP1 bound to: 4'b1011 
 	Parameter STOP2 bound to: 4'b1100 
 INFO: [Synth 8-6155] done synthesizing module 'iic_com' (2#1) [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/iic_com.v:21]
-INFO: [Synth 8-6157] synthesizing module 'sys_pll' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-12792-DESKTOP-DCEMUHV/realtime/sys_pll_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'sys_pll' (3#1) [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-12792-DESKTOP-DCEMUHV/realtime/sys_pll_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'HDMI_FPGA_ML_A7_0' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-12792-DESKTOP-DCEMUHV/realtime/HDMI_FPGA_ML_A7_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'HDMI_FPGA_ML_A7_0' (4#1) [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-12792-DESKTOP-DCEMUHV/realtime/HDMI_FPGA_ML_A7_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'vio_0' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-12792-DESKTOP-DCEMUHV/realtime/vio_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vio_0' (5#1) [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-12792-DESKTOP-DCEMUHV/realtime/vio_0_stub.v:6]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:454]
-INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-12792-DESKTOP-DCEMUHV/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ila_0' (6#1) [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-12792-DESKTOP-DCEMUHV/realtime/ila_0_stub.v:6]
-WARNING: [Synth 8-689] width (50) of port connection 'probe0' does not match port width (29) of module 'ila_0' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:456]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_HDMI'. This will prevent further optimization [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:427]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_vio'. This will prevent further optimization [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:448]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila'. This will prevent further optimization [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:454]
+INFO: [Synth 8-6157] synthesizing module 'sys_pll' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-6800-DESKTOP-DCEMUHV/realtime/sys_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sys_pll' (3#1) [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-6800-DESKTOP-DCEMUHV/realtime/sys_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_FPGA_ML_A7_0' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-6800-DESKTOP-DCEMUHV/realtime/HDMI_FPGA_ML_A7_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_FPGA_ML_A7_0' (4#1) [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-6800-DESKTOP-DCEMUHV/realtime/HDMI_FPGA_ML_A7_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-6800-DESKTOP-DCEMUHV/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (5#1) [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-6800-DESKTOP-DCEMUHV/realtime/vio_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:750]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-6800-DESKTOP-DCEMUHV/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (6#1) [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/.Xil/Vivado-6800-DESKTOP-DCEMUHV/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (50) of port connection 'probe0' does not match port width (29) of module 'ila_0' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:752]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_HDMI'. This will prevent further optimization [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:723]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_vio'. This will prevent further optimization [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:744]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila'. This will prevent further optimization [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:750]
 INFO: [Synth 8-6155] done synthesizing module 'hdmi_rx' (7#1) [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1122.645 ; gain = 48.895
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1124.898 ; gain = 44.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1122.645 ; gain = 48.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.898 ; gain = 44.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1122.645 ; gain = 48.895
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.898 ; gain = 44.617
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1122.645 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1124.898 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -102,7 +121,7 @@ Finished Parsing XDC File [c:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_to
 Parsing XDC File [c:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'u_vio'
 Finished Parsing XDC File [c:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'u_vio'
 Parsing XDC File [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc]
-WARNING: [Constraints 18-619] A clock with name 'pclk' already exists, overwriting the previous clock with the same name. [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:95]
+WARNING: [Constraints 18-619] A clock with name 'pclk' already exists, overwriting the previous clock with the same name. [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:113]
 Finished Parsing XDC File [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_rx_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_rx_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -110,21 +129,21 @@ Parsing XDC File [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi
 Finished Parsing XDC File [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1239.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1242.391 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1239.008 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1242.391 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_ila' at clock pin 'clk' is different from the actual clock period '6.667', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1239.051 ; gain = 165.301
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1242.422 ; gain = 162.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tftg256-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1239.051 ; gain = 165.301
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1242.422 ; gain = 162.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -152,11 +171,9 @@ Applied set_property DONT_TOUCH = true for sys_pll_i. (constraint file  auto gen
 Applied set_property DONT_TOUCH = true for u_ila. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for u_vio. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1239.051 ; gain = 165.301
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1242.422 ; gain = 162.141
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'iic_com'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'hdmi_rx'
-INFO: [Synth 8-802] inferred FSM for state register 'y_state_reg' in module 'hdmi_rx'
 INFO: [Synth 8-6159] Found Keep on FSM register 'cstate_reg' in module 'iic_com', re-encoding will not be performed
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -176,26 +193,8 @@ INFO: [Synth 8-6159] Found Keep on FSM register 'cstate_reg' in module 'iic_com'
                    STOP1 |                             1011 |                             1011
                    STOP2 |                             1100 |                             1100
 ---------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                               00 |                              000
-                 iSTATE1 |                               01 |                              001
-                 iSTATE2 |                               10 |                              010
-                 iSTATE0 |                               11 |                              011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'hdmi_rx'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 iSTATE0 |                               00 |                              011
-                  iSTATE |                               01 |                              000
-                 iSTATE1 |                               10 |                              001
-                 iSTATE2 |                               11 |                              010
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'y_state_reg' using encoding 'sequential' in module 'hdmi_rx'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1239.051 ; gain = 165.301
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1242.422 ; gain = 162.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -205,35 +204,36 @@ Detailed RTL Component Info :
 	   2 Input   21 Bit       Adders := 2     
 	   2 Input   11 Bit       Adders := 3     
 	   3 Input    8 Bit       Adders := 3     
-	   2 Input    4 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
 	   2 Input    2 Bit       Adders := 1     
 +---Registers : 
 	               21 Bit    Registers := 2     
-	               16 Bit    Registers := 1     
+	               16 Bit    Registers := 9     
 	               11 Bit    Registers := 3     
 	                8 Bit    Registers := 17    
-	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 2     
-	                3 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
 	                1 Bit    Registers := 16    
 +---Muxes : 
-	   2 Input   21 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 3     
 	   4 Input   21 Bit        Muxes := 2     
 	   2 Input   16 Bit        Muxes := 1     
 	   4 Input   16 Bit        Muxes := 1     
-	   2 Input   11 Bit        Muxes := 3     
-	  16 Input   11 Bit        Muxes := 4     
+	  32 Input   16 Bit        Muxes := 16    
+	   2 Input   11 Bit        Muxes := 4     
 	   4 Input   11 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 14    
+	   2 Input    8 Bit        Muxes := 17    
 	  14 Input    4 Bit        Muxes := 2     
 	   2 Input    4 Bit        Muxes := 17    
 	   3 Input    4 Bit        Muxes := 1     
 	   5 Input    3 Bit        Muxes := 1     
-	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 6     
 	   3 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
 	   2 Input    2 Bit        Muxes := 6     
-	   4 Input    2 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 33    
+	   2 Input    1 Bit        Muxes := 40    
 	   3 Input    1 Bit        Muxes := 2     
 	  14 Input    1 Bit        Muxes := 8     
 	   8 Input    1 Bit        Muxes := 2     
@@ -254,26 +254,26 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1239.051 ; gain = 165.301
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1242.422 ; gain = 162.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'pclk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1239.051 ; gain = 165.301
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1242.422 ; gain = 162.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1244.492 ; gain = 170.742
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1265.898 ; gain = 185.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1262.523 ; gain = 188.773
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1269.336 ; gain = 189.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -308,15 +308,15 @@ WARNING: [Synth 8-3295] tying undriven pin probe0_inferred:in0[35] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin probe0_inferred:in0[34] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin probe0_inferred:in0[33] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin probe0_inferred:in0[32] to constant 0
-WARNING: [Synth 8-5410] Found another clock driver BUFG_inst:O [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:69]
+WARNING: [Synth 8-5410] Found another clock driver BUFG_inst:O [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/hdmi_rx.v:70]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1262.523 ; gain = 188.773
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1269.336 ; gain = 189.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1262.523 ; gain = 188.773
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1269.336 ; gain = 189.055
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin sda_IBUF with 1st driver pin 'u_iic_com/sda_IOBUF_inst/O' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/iic_com.v:21]
 CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin sda_IBUF with 2nd driver pin 'u_iic_com/i_167/O' [C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.srcs/sources_1/new/iic_com.v:21]
@@ -331,25 +331,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1262.523 ; gain = 188.773
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1269.336 ; gain = 189.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1262.523 ; gain = 188.773
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1269.336 ; gain = 189.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1262.523 ; gain = 188.773
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1269.336 ; gain = 189.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1262.523 ; gain = 188.773
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1269.336 ; gain = 189.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -374,32 +374,32 @@ Report Cell Usage:
 |3     |sys_pll         |     1|
 |4     |vio             |     1|
 |5     |BUFG            |     2|
-|6     |CARRY4          |    48|
-|7     |LUT1            |    64|
-|8     |LUT2            |    81|
-|9     |LUT3            |    39|
-|10    |LUT4            |    34|
-|11    |LUT5            |    49|
-|12    |LUT6            |   129|
+|6     |CARRY4          |    75|
+|7     |LUT1            |    74|
+|8     |LUT2            |   160|
+|9     |LUT3            |    49|
+|10    |LUT4            |    68|
+|11    |LUT5            |    52|
+|12    |LUT6            |   160|
 |13    |MUXF7           |     1|
 |14    |FDCE            |    59|
 |15    |FDCPE           |     8|
 |16    |FDPE            |    14|
-|17    |FDRE            |   264|
+|17    |FDRE            |   296|
 |18    |LDC             |     8|
 |19    |IBUF            |    31|
 |20    |IOBUF           |     1|
 |21    |OBUF            |     2|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1262.523 ; gain = 188.773
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1269.336 ; gain = 189.055
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 2 critical warnings and 20 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1262.523 ; gain = 72.367
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1262.523 ; gain = 188.773
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1269.336 ; gain = 71.531
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1269.336 ; gain = 189.055
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1263.348 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1273.156 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: probe0[29]
@@ -408,7 +408,7 @@ WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: probe0[30
 Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets probe0[30]]
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1265.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1278.125 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 17 instances were transformed.
   FDCPE => FDCPE (FDCE, FDPE, LDCE, LUT3, VCC): 8 instances
@@ -416,11 +416,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 8 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-42 Infos, 30 Warnings, 2 Critical Warnings and 0 Errors encountered.
+39 Infos, 32 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1265.336 ; gain = 191.586
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1278.125 ; gain = 197.844
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint 'C:/Users/STEVEN/Desktop/GITHUB/FGPA/hdmi_rx_it6802_tohdmi/hdmi_rx_it6802.runs/synth_2/hdmi_rx.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hdmi_rx_utilization_synth.rpt -pb hdmi_rx_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Sep 16 16:58:32 2020...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 15:21:53 2020...

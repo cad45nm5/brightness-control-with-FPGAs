@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7a35tftg256-2" LaunchTime="1578715831">
+  <File Type="PA-TCL" Name="uart_test.tcl"/>
+  <File Type="REPORTS-TCL" Name="uart_test_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="uart_test.msk"/>
+  <File Type="RDI-RDI" Name="uart_test.vdi"/>
+  <File Type="BG-BIT" Name="uart_test.bit"/>
+  <File Type="BG-DRC" Name="uart_test.drc"/>
+  <File Type="BG-BGN" Name="uart_test.bgn"/>
+  <File Type="BG-BIN" Name="uart_test.bin"/>
+  <File Type="BITSTR-RBT" Name="uart_test.rbt"/>
+  <File Type="BITSTR-NKY" Name="uart_test.nky"/>
+  <File Type="BITSTR-BMM" Name="uart_test_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="uart_test.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="uart_test.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="uart_test.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="uart_test.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="uart_test_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="uart_test_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="uart_test_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="uart_test_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="uart_test_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="uart_test_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="uart_test_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="uart_test_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="uart_test_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="uart_test_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="uart_test_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="uart_test_postroute_physopt_bb.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/src/clkdiv.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/uartctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/uartrx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/uarttx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/uart_test.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="uart_test"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/constrs_1/new/uart.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

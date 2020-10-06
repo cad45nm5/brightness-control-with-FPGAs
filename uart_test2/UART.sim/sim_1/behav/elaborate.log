@@ -1,0 +1,16 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 63862a82907e4382b65720b5498b24f3 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot uart_top_TB_behav xil_defaultlib.uart_top_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port uart_tx_o [F:/A7_Demo/S01_CH08_UART/UART/UART.srcs/sim_1/new/uart_top_TB.v:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_path
+Compiling module xil_defaultlib.uart_tx_path
+Compiling module xil_defaultlib.uart_top
+Compiling module xil_defaultlib.uart_top_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot uart_top_TB_behav

@@ -1,0 +1,86 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Mon Sep  4 19:17:47 2017
+| Host         : ALINX000008-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file uart_test_control_sets_placed.rpt
+| Design       : uart_test
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |   109 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              14 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              54 |           20 |
+| Yes          | No                    | No                     |               8 |            8 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              31 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+---------------------------+---------------------------+------------------+----------------+
+|     Clock Signal    |       Enable Signal       |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++---------------------+---------------------------+---------------------------+------------------+----------------+
+|  sys_clk_ibufg_BUFG |                           |                           |                1 |              1 |
+|  clk_BUFG           | u2/tx                     | u2/cnt[7]_i_1_n_0         |                1 |              1 |
+|  clk_BUFG           | u1/dataout[2]_i_1_n_0     |                           |                1 |              1 |
+|  clk_BUFG           | u1/dataout[6]_i_1_n_0     |                           |                1 |              1 |
+|  clk_BUFG           | u1/dataout[7]_i_1_n_0     |                           |                1 |              1 |
+|  clk_BUFG           | u1/dataout[1]_i_1_n_0     |                           |                1 |              1 |
+|  clk_BUFG           | u1/dataout[4]_i_1_n_0     |                           |                1 |              1 |
+|  clk_BUFG           | u1/dataout[5]_i_1_n_0     |                           |                1 |              1 |
+|  clk_BUFG           | u1/dataout[0]_i_1_n_0     |                           |                1 |              1 |
+|  clk_BUFG           | u1/dataout[3]_i_1_n_0     |                           |                1 |              1 |
+|  sys_clk_ibufg_BUFG |                           | u0/cnt[9]_i_1_n_0         |                2 |              4 |
+|  clk_BUFG           | u3/dataout_reg[6]_i_2_n_0 | u3/dataout_reg[6]_i_1_n_0 |                1 |              5 |
+|  clk_BUFG           |                           | u2/cnt[7]_i_1_n_0         |                3 |              9 |
+|  clk_BUFG           | u3/k[8]_i_1_n_0           | u1/rdsig                  |                3 |              9 |
+|  clk_BUFG           |                           | u1/cnt[7]_i_1__0_n_0      |                4 |             10 |
+|  sys_clk_ibufg_BUFG |                           | u0/cnt[15]_i_1_n_0        |                4 |             12 |
+|  clk_BUFG           |                           |                           |                6 |             13 |
+|  clk_BUFG           | u3/uart_cnt[15]_i_1_n_0   | u1/rdsig                  |                4 |             16 |
+| ~clk_BUFG           |                           | u1/rdsig                  |                7 |             19 |
++---------------------+---------------------------+---------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    10 |
+| 4      |                     1 |
+| 5      |                     1 |
+| 9      |                     2 |
+| 10     |                     1 |
+| 12     |                     1 |
+| 13     |                     1 |
+| 16+    |                     2 |
++--------+-----------------------+
+
+

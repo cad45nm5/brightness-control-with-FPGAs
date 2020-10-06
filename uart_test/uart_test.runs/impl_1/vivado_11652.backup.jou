@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Sep  4 19:28:22 2017
+# Process ID: 11652
+# Current directory: D:/demo_AX7103/6_uart_test/uart_test/uart_test.runs/impl_1
+# Command line: vivado.exe -log uart_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_test.tcl -notrace
+# Log file: D:/demo_AX7103/6_uart_test/uart_test/uart_test.runs/impl_1/uart_test.vdi
+# Journal file: D:/demo_AX7103/6_uart_test/uart_test/uart_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source uart_test.tcl -notrace

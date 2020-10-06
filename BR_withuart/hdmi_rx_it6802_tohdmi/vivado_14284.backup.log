@@ -1,0 +1,369 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Aug 20 16:32:36 2019
+# Process ID: 14284
+# Current directory: G:/deverlopboard/a35t_code/hdmi_rx_it6802
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10980 G:\deverlopboard\a35t_code\hdmi_rx_it6802\hdmi_rx_it6802.xpr
+# Log file: G:/deverlopboard/a35t_code/hdmi_rx_it6802/vivado.log
+# Journal file: G:/deverlopboard/a35t_code/hdmi_rx_it6802\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.xpr
+INFO: [Project 1-313] Project file moved from 'G:/BaiduNetdiskDownload/hdmi_rx_it6802' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 885.926 ; gain = 125.871
+update_compile_order -fileset sources_1
+set_property flow {Vivado Synthesis 2017} [get_runs synth_1]
+create_run synth_2 -flow {Vivado Synthesis 2017} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a75tfgg484-2
+current_run [get_runs synth_2]
+set_property part xc7a35tftg256-2 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'ila_0' is locked:
+* Current project part 'xc7a35tftg256-2' and the part 'xc7a75tfgg484-2' used to customize the IP 'ila_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'sys_pll' is locked:
+* Current project part 'xc7a35tftg256-2' and the part 'xc7a75tfgg484-2' used to customize the IP 'sys_pll' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'vio_0' is locked:
+* Current project part 'xc7a35tftg256-2' and the part 'xc7a75tfgg484-2' used to customize the IP 'vio_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+set_property flow {Vivado Implementation 2016} [get_runs impl_2]
+report_ip_status -name ip_status 
+upgrade_ip -srcset ila_0 [get_ips  {ila_0 sys_pll vio_0}] -log ip_upgrade.log
+Upgrading 'ila_0'
+INFO: [Project 1-386] Moving file 'G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/ila_0/ila_0.xci' from fileset 'ila_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated ila_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+Upgrading 'sys_pll'
+INFO: [Project 1-386] Moving file 'G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/sys_pll/sys_pll.xci' from fileset 'sys_pll' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated sys_pll to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sys_pll'...
+Upgrading 'vio_0'
+INFO: [Project 1-386] Moving file 'G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/vio_0/vio_0.xci' from fileset 'vio_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated vio_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'vio_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'G:/deverlopboard/a35t_code/hdmi_rx_it6802/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:33 ; elapsed = 00:00:32 . Memory (MB): peak = 1086.398 ; gain = 158.809
+export_ip_user_files -of_objects [get_ips {ila_0 sys_pll vio_0}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+launch_runs synth_2 -jobs 2
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'vio_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sys_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'sys_pll'...
+[Tue Aug 20 16:35:12 2019] Launched ila_0_synth_1, sys_pll_synth_1, vio_0_synth_1...
+Run output will be captured here:
+ila_0_synth_1: G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/ila_0_synth_1/runme.log
+sys_pll_synth_1: G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/sys_pll_synth_1/runme.log
+vio_0_synth_1: G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/vio_0_synth_1/runme.log
+[Tue Aug 20 16:35:12 2019] Launched synth_2...
+Run output will be captured here: G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/synth_2/runme.log
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tftg256-2
+INFO: [Project 1-454] Reading design checkpoint 'g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/sys_pll/sys_pll.dcp' for cell 'sys_pll_i'
+INFO: [Project 1-454] Reading design checkpoint 'g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'u_ila'
+INFO: [Project 1-454] Reading design checkpoint 'g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/vio_0/vio_0.dcp' for cell 'u_vio'
+INFO: [Netlist 29-17] Analyzing 132 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tftg256-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: u_ila UUID: c30a8330-47ba-5203-8dbc-7e3e3214d902 
+INFO: [Chipscope 16-324] Core: u_vio UUID: 407d14e8-1cc9-58ef-8c2e-354d7bf170fd 
+Parsing XDC File [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'u_ila/inst'
+Finished Parsing XDC File [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'u_ila/inst'
+Parsing XDC File [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'u_ila/inst'
+Finished Parsing XDC File [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'u_ila/inst'
+Parsing XDC File [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/sys_pll/sys_pll_board.xdc] for cell 'sys_pll_i/inst'
+Finished Parsing XDC File [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/sys_pll/sys_pll_board.xdc] for cell 'sys_pll_i/inst'
+Parsing XDC File [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/sys_pll/sys_pll.xdc] for cell 'sys_pll_i/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/sys_pll/sys_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/sys_pll/sys_pll.xdc:57]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1888.805 ; gain = 545.387
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.370370 which will be rounded to 0.370 to ensure it is an integer multiple of 1 picosecond [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/sys_pll/sys_pll.xdc:57]
+Finished Parsing XDC File [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/sys_pll/sys_pll.xdc] for cell 'sys_pll_i/inst'
+Parsing XDC File [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/vio_0/vio_0.xdc] for cell 'u_vio'
+Finished Parsing XDC File [g:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/sources_1/ip/vio_0/vio_0.xdc] for cell 'u_vio'
+Parsing XDC File [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'C18' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:1]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AA19' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:28]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AB18' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:29]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:30]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AA18' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:31]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AB20' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:32]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AB21' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:33]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AB22' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:34]
+CRITICAL WARNING: [Common 17-69] Command failed: 'Y21' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:35]
+CRITICAL WARNING: [Common 17-69] Command failed: 'Y22' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:36]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W21' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:37]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W22' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:38]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V20' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:39]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U20' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:40]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R14' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:42]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R17' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:47]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V19' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:49]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V18' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:50]
+CRITICAL WARNING: [Common 17-69] Command failed: 'Y19' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:51]
+CRITICAL WARNING: [Common 17-69] Command failed: 'Y18' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:52]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W20' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:53]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W19' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:54]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AA21' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:55]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U18' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:56]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P17' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:57]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R18' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:58]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T18' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:59]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N17' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:60]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U17' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:61]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AA20' is not a valid site or package pin name. [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc:62]
+Finished Parsing XDC File [G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.srcs/constrs_1/new/hdmi_test.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 53 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 44 instances
+  FDCPE => FDCPE (FDCE, FDPE, LUT3, LDCE, VCC): 8 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1907.289 ; gain = 753.781
+startgroup
+set_property package_pin "" [get_ports [list  {g_in[1]}]]
+place_ports {b_in[7]} P16
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  de_in]]
+place_ports {b_in[6]} N14
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  it6802_rstn]]
+place_ports {b_in[5]} P14
+endgroup
+place_ports {b_in[4]} M16
+place_ports {b_in[3]} N16
+place_ports {b_in[2]} L15
+place_ports {b_in[1]} M15
+place_ports {b_in[0]} L14
+place_ports {g_in[7]} T14
+place_ports {g_in[6]} T15
+place_ports {g_in[5]} R13
+place_ports {g_in[4]} T13
+place_ports {g_in[3]} R15
+startgroup
+set_property package_pin "" [get_ports [list  vs_in]]
+place_ports {g_in[2]} R16
+endgroup
+place_ports {g_in[1]} P13
+startgroup
+set_property package_pin "" [get_ports [list  hs_in]]
+place_ports {g_in[0]} P15
+endgroup
+place_ports {r_in[7]} H5
+place_ports {r_in[6]} H4
+place_ports {r_in[5]} G1
+place_ports {r_in[4]} T10
+place_ports {r_in[3]} T9
+place_ports {r_in[2]} P11
+place_ports {r_in[1]} R12
+place_ports {r_in[0]} T12
+place_ports clk_27m N11
+place_ports de_in M14
+place_ports hs_in K15
+place_ports i2c_clk L13
+place_ports i2c_data K13
+place_ports it6802_rstn P9
+place_ports vs_in K16
+place_ports pclk N13
+place_ports i2s_mclk H3
+place_ports i2s_sck J3
+place_ports i2s_sdin J1
+place_ports i2s_ws K1
+save_constraints
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2015.332 ; gain = 0.000
+[Tue Aug 20 17:12:27 2019] Launched impl_2...
+Run output will be captured here: G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299011758
+set_property PROGRAM.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-1889] Uploading output probe values for VIO core [hw_vio_1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:16:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:16:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:16:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:16:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:16:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:16:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes hs_dly2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:16:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:16:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:16:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:16:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:16:51
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2019-Aug-20 17:16:57
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes hs_dly2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:16:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:16:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:17:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:17:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:17:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:17:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210299011758
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299011758
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:18:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:18:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:18:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:18:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:18:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:18:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:18:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:18:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.runs/impl_2/hdmi_rx.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:18:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:18:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:19:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:19:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:19:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:19:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:19:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes de_dly2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:19:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Aug-20 17:19:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/deverlopboard/a35t_code/hdmi_rx_it6802/hdmi_rx_it6802.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Aug-20 17:19:30
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2019-Aug-20 17:19:32
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210299011758
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 20 17:20:30 2019...

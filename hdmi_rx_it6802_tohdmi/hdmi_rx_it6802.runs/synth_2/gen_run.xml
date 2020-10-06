@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_2" LaunchPart="xc7a35tftg256-2" LaunchTime="1600246663">
+<GenRun Id="synth_2" LaunchPart="xc7a35tftg256-2" LaunchTime="1601968864">
   <File Type="PA-TCL" Name="hdmi_rx.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="hdmi_rx_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="hdmi_rx_reports.tcl"/>

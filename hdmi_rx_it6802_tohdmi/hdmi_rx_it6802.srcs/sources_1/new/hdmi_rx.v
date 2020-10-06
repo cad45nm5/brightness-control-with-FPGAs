@@ -29,6 +29,7 @@ module hdmi_rx(
     input [7:0] r_in,
     input [7:0] g_in,
     input [7:0] b_in,
+    input [7:0] dip,
 	 input		pclk,
 	 input		hs_in,
 	 input		vs_in,
@@ -37,7 +38,7 @@ module hdmi_rx(
 	 input		i2s_sck,	 
 	 input		i2s_ws,
 	 input		i2s_mclk,
-	 input KEY,
+	 input      KEY,
 	 output		it6802_rstn	,
 	 
 	 output      HDMI_CLK_P,
@@ -99,18 +100,28 @@ reg hs_dly3,vs_dly3,de_dly3;
 
 reg [7:0] tempR,tempG,tempB;
 
- reg [7:0]Rout,Gout,Bout;
+reg [7:0]Rout,Gout,Bout;
 reg[20:0] x_cnt=0;
- reg[20:0] y_cnt=0;
+reg[20:0] y_cnt=0;
 //integer HL=192,HR=1728,VH=108,VL=972;
-reg[15:0] HL=20,HR=1900,VH=10,VL=1070;
+reg[15:0] HL=20,HR=1900,VH=20,VL=1060;
+reg[15:0] HLX=30,HRX=1890,VHX=30,VLX=1050;
+
+parameter HL_o=20,HR_o=1900,VH_o=20,VL_o=1060;
+parameter HL_c=0,HR_c=1920,VH_c=0,VL_c=1080;
+
+parameter HLX_o=40,HRX_o=1880,VHX_o=40,VLX_o=1040;
+parameter HLX_c=0,HRX_c=1920,VHX_c=0,VLX_c=1080;
+
+
+
 parameter HBP=148,HFP=88;//148,88
 parameter VBP=36,VFP=4;
 
 parameter active_x=1920,active_y=1080;
 reg[2:0]state,y_state=3;
 reg[10:0]SYNC_CNT,Y_SYNC_CNT;
-reg[3:0]edge_case;
+reg[4:0]edge_case;
 
 
 reg[30:0]cnt;
@@ -141,117 +152,392 @@ always@(posedge clk_debounce)
 always @ (posedge pclk ) begin
 
  case(edge_case)
-            0:
+        5'b00000:
                 begin
-                     HL=20;
-                     VH=20;
-                     HR=1900;
-                     VL=1060;
+                     HL=HL_o;
+                     VH=VH_o;
+                     HR=HR_o;
+                     VL=VL_o;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            1:
+        5'b00001:
              begin
-                     HL=20;
-                     VH=0;
-                     HR=1900;
-                     VL=1060;
+                     HL=HL_o;
+                     VH=VH_o;
+                     HR=HR_o;
+                     VL=VL_c;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            2:
+        5'b00010:
              begin
-                     HL=20;
-                     VH=20;
-                     HR=1920;
-                     VL=1060;
+                     HL=HL_o;
+                     VH=VH_o;
+                     HR=HR_c;
+                     VL=VL_o;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            3:
+        5'b00011:
              begin
-                     HL=20;
-                     VH=20;
-                     HR=1900;
-                     VL=1080;
+                     HL=HL_o;
+                     VH=VH_o;
+                     HR=HR_c;
+                     VL=VL_c;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            4:
+        5'b00100:
              begin
-                     HL=20;
-                     VH=20;
-                     HR=1900;
-                     VL=1060;
+                     HL=HL_o;
+                     VH=VH_c;
+                     HR=HR_o;
+                     VL=VL_o;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            5:
+        5'b00101:
              begin
-                     HL=0;
-                     VH=0;
-                     HR=1900;
-                     VL=1060;
+                     HL=HL_o;
+                     VH=VH_c;
+                     HR=HR_o;
+                     VL=VL_c;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            6:
+        5'b000110:
              begin
-                     HL=0;
-                     VH=20;
-                     HR=1920;
-                     VL=1060;
+                     HL=HL_o;
+                     VH=VH_c;
+                     HR=HR_c;
+                     VL=VL_o;
+                     
+                     HLX=HL; 
+                     VHX=VH; 
+                     HRX=HR; 
+                     VLX=VL; 
                 end
-            7:
+        5'b00111:
              begin
-                     HL=0;
-                     VH=20;
-                     HR=1900;
-                     VL=1080;
+                     HL=HL_o;
+                     VH=VH_c;
+                     HR=HR_c;
+                     VL=VL_c;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            8:
+        5'b01000:
              begin
-                     HL=20;
-                     VH=0;
-                     HR=1920;
-                     VL=1060;
+                     HL=HL_c;
+                     VH=VH_o;
+                     HR=HR_o;
+                     VL=VL_o;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            9:
+        5'b01001:
              begin
-                     HL=20;
-                     VH=0;
-                     HR=1900;
-                     VL=1080;
+                     HL=HL_c;
+                     VH=VH_o;
+                     HR=HR_o;
+                     VL=VL_c;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            10:
+        5'b01010:
              begin
-                     HL=20;
-                     VH=20;
-                     HR=1920;
-                     VL=1080;
+                     HL=HL_c;
+                     VH=VH_o;
+                     HR=HR_c;
+                     VL=VL_o;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            11:
+        5'b01011:
              begin
-                     HL=0;
-                     VH=0;
-                     HR=1920;
-                     VL=1070;
+                     HL=HL_c;
+                     VH=VH_o;
+                     HR=HR_c;
+                     VL=VL_c;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            12:
+        5'b01100:
              begin
-                     HL=0;
-                     VH=0;
-                     HR=1900;
-                     VL=1080;
+                     HL=HL_c;
+                     VH=VH_c;
+                     HR=HR_o;
+                     VL=VL_o;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            13:
+         5'b01101:
              begin
-                     HL=20;
-                     VH=0;
-                     HR=1920;
-                     VL=1080;
+                     HL=HL_c;
+                     VH=VH_c;
+                     HR=HR_o;
+                     VL=VL_c;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            14:
+        5'b01110:
              begin
-                     HL=0;
-                     VH=0;
-                     HR=1900;
-                     VL=1080;
+                     HL=HL_c;
+                     VH=VH_c;
+                     HR=HR_c;
+                     VL=VL_o;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
                 end
-            15:
+        5'b01111:
              begin
-                     HL=1920;
-                     VH=1080;
-                     HR=0;
-                     VL=0;//????????????????????????
+                     HL=HL_c;
+                     VH=VH_c;
+                     HR=HR_c;
+                     VL=VL_c;
+                     
+                     HLX=HL;
+                     VHX=VH;
+                     HRX=HR;
+                     VLX=VL;
+                end
+                
+                
+                
+         5'b10000:
+             begin
+                     HL=HL_o;
+                     VH=VH_o;
+                     HR=HR_o;
+                     VL=VL_o;
+                     
+                     HLX=HLX_o;
+                     VHX=VHX_o;
+                     HRX=HRX_o;
+                     VLX=VLX_o;
+                end
+        5'b10001:
+             begin
+                     HL=HL_o;
+                     VH=VH_o;
+                     HR=HR_o;
+                     VL=VL_c;
+                     
+                     HLX=HLX_o;
+                     VHX=VHX_o;
+                     HRX=HRX_o;
+                     VLX=VLX_c;
+                end
+        5'b10010:
+             begin
+                     HL=HL_o;
+                     VH=VH_o;
+                     HR=HR_c;
+                     VL=VL_o;
+                     
+                     HLX=HLX_o;
+                     VHX=VHX_o;
+                     HRX=HRX_c;
+                     VLX=VLX_o;
+                end
+        5'b10011:
+             begin
+                     HL=HL_o;
+                     VH=VH_o;
+                     HR=HR_c;
+                     VL=VL_c;
+                     
+                     HLX=HLX_o;
+                     VHX=VHX_o;
+                     HRX=HRX_c;
+                     VLX=VLX_c;
+                end
+        5'b10100:
+             begin
+                     HL=HL_o;
+                     VH=VH_c;
+                     HR=HR_o;
+                     VL=VL_o;
+                     
+                     HLX=HLX_o;
+                     VHX=VHX_c;
+                     HRX=HRX_o;
+                     VLX=VLX_o;
+                end
+        5'b10101:
+             begin
+                     HL=HL_o;
+                     VH=VH_c;
+                     HR=HR_o;
+                     VL=VL_c;
+                     
+                     HLX=HLX_o;
+                     VHX=VHX_c;
+                     HRX=HRX_o;
+                     VLX=VLX_c;
+                end
+        5'b100110:
+             begin
+                     HL=HL_o;
+                     VH=VH_c;
+                     HR=HR_c;
+                     VL=VL_o;
+                     
+                     HLX=HLX_o;
+                     VHX=VHX_c;
+                     HRX=HRX_c;
+                     VLX=VLX_o;
+                end
+        5'b10111:
+             begin
+                     HL=HL_o;
+                     VH=VH_c;
+                     HR=HR_c;
+                     VL=VL_c;
+                     
+                     HLX=HLX_o;
+                     VHX=VHX_c;
+                     HRX=HRX_c;
+                     VLX=VLX_c;
+                end
+        5'b11000:
+             begin
+                     HL=HL_c;
+                     VH=VH_o;
+                     HR=HR_o;
+                     VL=VL_o;
+                     
+                     HLX=HLX_c;
+                     VHX=VHX_o;
+                     HRX=HRX_o;
+                     VLX=VLX_o;
+                end
+        5'b11001:
+             begin
+                     HL=HL_c;
+                     VH=VH_o;
+                     HR=HR_o;
+                     VL=VL_c;
+                     
+                     HLX=HLX_c;
+                     VHX=VHX_o;
+                     HRX=HRX_o;
+                     VLX=VLX_c;
+                end
+        5'b11010:
+             begin
+                     HL=HL_c;
+                     VH=VH_o;
+                     HR=HR_c;
+                     VL=VL_o;
+                     
+                     HLX=HLX_c;
+                     VHX=VHX_o;
+                     HRX=HRX_c;
+                     VLX=VLX_o;
+                end
+        5'b11011:
+             begin
+                     HL=HL_c;
+                     VH=VH_o;
+                     HR=HR_c;
+                     VL=VL_c;
+                     
+                     HLX=HLX_c;
+                     VHX=VHX_o;
+                     HRX=HRX_c;
+                     VLX=VLX_c;
+                end
+        5'b11100:
+             begin
+                     HL=HL_c;
+                     VH=VH_c;
+                     HR=HR_o;
+                     VL=VL_o;
+                     
+                     HLX=HLX_c;
+                     VHX=VHX_c;
+                     HRX=HRX_o;
+                     VLX=VLX_o;
+                end
+         5'b11101:
+             begin
+                     HL=HL_c;
+                     VH=VH_c;
+                     HR=HR_o;
+                     VL=VL_c;
+                     
+                     HLX=HLX_c;
+                     VHX=VHX_c;
+                     HRX=HRX_o;
+                     VLX=VLX_c;
+                end
+        5'b11110:
+             begin
+                     HL=HL_c;
+                     VH=VH_c;
+                     HR=HR_c;
+                     VL=VL_o;
+                     
+                     HLX=HLX_c;
+                     VHX=VHX_c;
+                     HRX=HRX_c;
+                     VLX=VLX_o;
+                end
+        5'b11111:
+             begin
+                     HL=HL_c;
+                     VH=VH_c;
+                     HR=HR_c;
+                     VL=VL_c;
+                     
+                     HLX=HLX_c;
+                     VHX=VHX_c;
+                     HRX=HRX_c;
+                     VLX=VLX_c;
                 end
          endcase
 
@@ -354,9 +640,19 @@ always @ (posedge pclk ) begin
             end
         else 
             begin
-                 Rout<=tempR-tempR/5;
-                 Gout<=tempG-tempG/5;
-                 Bout<=tempB-tempB/5;
+                if(y_cnt<VHX||y_cnt>VLX||x_cnt<HLX||x_cnt>HRX)
+                    begin
+                         Rout<=tempR-(tempR/25);
+                         Gout<=tempG-(tempG/25);
+                         Bout<=tempB-(tempB/25);
+                    end
+                else
+                    begin
+                         Rout<=tempR-((tempR/25)*2);
+                         Gout<=tempG-((tempG/25)*2);
+                         Bout<=tempB-((tempB/25)*2);
+                    end
+                 
             end
             
             

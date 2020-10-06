@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Wed Sep 16 16:58:31 2020
+| Date         : Tue Oct  6 15:21:52 2020
 | Host         : DESKTOP-DCEMUHV running 64-bit major release  (build 9200)
 | Command      : report_utilization -file hdmi_rx_utilization_synth.rpt -pb hdmi_rx_utilization_synth.pb
 | Design       : hdmi_rx
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  364 |     0 |     20800 |  1.75 |
-|   LUT as Logic          |  364 |     0 |     20800 |  1.75 |
+| Slice LUTs*             |  495 |     0 |     20800 |  2.38 |
+|   LUT as Logic          |  495 |     0 |     20800 |  2.38 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  369 |     0 |     41600 |  0.89 |
-|   Register as Flip Flop |  353 |     0 |     41600 |  0.85 |
+| Slice Registers         |  401 |     0 |     41600 |  0.96 |
+|   Register as Flip Flop |  385 |     0 |     41600 |  0.93 |
 |   Register as Latch     |   16 |     0 |     41600 |  0.04 |
 | F7 Muxes                |    1 |     0 |     16300 | <0.01 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 14    |          Yes |           - |          Set |
 | 67    |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 264   |          Yes |       Reset |            - |
+| 296   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -146,15 +146,15 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  264 |        Flop & Latch |
-| LUT6     |  129 |                 LUT |
-| LUT2     |   81 |                 LUT |
+| FDRE     |  296 |        Flop & Latch |
+| LUT6     |  160 |                 LUT |
+| LUT2     |  160 |                 LUT |
+| CARRY4   |   75 |          CarryLogic |
+| LUT1     |   74 |                 LUT |
+| LUT4     |   68 |                 LUT |
 | FDCE     |   67 |        Flop & Latch |
-| LUT1     |   64 |                 LUT |
-| LUT5     |   49 |                 LUT |
-| CARRY4   |   48 |          CarryLogic |
-| LUT3     |   47 |                 LUT |
-| LUT4     |   34 |                 LUT |
+| LUT3     |   57 |                 LUT |
+| LUT5     |   52 |                 LUT |
 | IBUF     |   33 |                  IO |
 | FDPE     |   22 |        Flop & Latch |
 | LDCE     |   16 |        Flop & Latch |
